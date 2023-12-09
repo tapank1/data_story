@@ -1,0 +1,226 @@
+"Country","Region","Year","Indicator","Phosphorus (kg)","Nitrogen (kg)","Pollutant","Total emissions including LULUCF (Tonnes of CO2 equivalent)","Total emissions yearly diff (Tonnes of CO2 equivalent)","Agriculture (Tonnes of CO2 equivalent)","Total emissions including LULUCF (Index 1990=100)","Total emissions including LULUCF per capita (kg/per capita)"
+"Australia","Oceania",1990,"Balance per hectare",1.024,20.425,"Greenhouse gases",636268.65,0,92095.8,100,37.285
+"Australia","Oceania",1991,"Balance per hectare",1.144,21.025,"Greenhouse gases",621497.02,-14771.63,91260.93,99.998,35.958
+"Australia","Oceania",1992,"Balance per hectare",1.101,20.049,"Greenhouse gases",556765.72,-64731.3,88317.43,100.844,31.854
+"Australia","Oceania",1993,"Balance per hectare",1.07,20.187,"Greenhouse gases",535319.22,-21446.5,86069.36,100.965,30.356
+"Australia","Oceania",1994,"Balance per hectare",1.249,20.86,"Greenhouse gases",530958.92,-4360.29999999993,86039.1,101.04,29.82
+"Australia","Oceania",1995,"Balance per hectare",1.121,19.456,"Greenhouse gases",514211.97,-16746.9500000001,82278.65,102.972,28.56
+"Australia","Oceania",1996,"Balance per hectare",1.256,20.47,"Greenhouse gases",522310.73,8098.76000000001,84494.53,104.456,28.659
+"Australia","Oceania",1997,"Balance per hectare",1.315,20.908,"Greenhouse gases",522850.34,539.610000000044,85697.55,107.255,28.38
+"Australia","Oceania",1998,"Balance per hectare",1.221,20.709,"Greenhouse gases",524332.94,1482.59999999992,85442.2,110.496,28.178
+"Australia","Oceania",1999,"Balance per hectare",1.227,20.611,"Greenhouse gases",539610.27,15277.3300000001,85399.79,111.851,28.684
+"Australia","Oceania",2000,"Balance per hectare",1.341,20.74,"Greenhouse gases",566358.31,26748.04,88716.22,114.503,29.763
+"Australia","Oceania",2001,"Balance per hectare",1.337,20.216,"Greenhouse gases",586636.35,20278.0399999999,87630.11,116.299,30.436
+"Australia","Oceania",2002,"Balance per hectare",1.379,21.398,"Greenhouse gases",582524.56,-4111.78999999992,87436.18,117.147,29.88
+"Australia","Oceania",2003,"Balance per hectare",0.769,15.937,"Greenhouse gases",591486.98,8962.41999999993,81706.55,116.815,29.993
+"Australia","Oceania",2004,"Balance per hectare",0.86,16.188,"Greenhouse gases",584853.8,-6633.17999999993,85250.76,120.721,29.341
+"Australia","Oceania",2005,"Balance per hectare",0.722,15.335,"Greenhouse gases",616293.16,31439.36,85972.45,122.265,30.545
+"Australia","Oceania",2006,"Balance per hectare",0.793,16.368,"Greenhouse gases",626790.48,10497.3199999999,84279.98,123.276,30.648
+"Australia","Oceania",2007,"Balance per hectare",0.872,16.856,"Greenhouse gases",641523.08,14732.6,80288.28,124.81,30.802
+"Australia","Oceania",2008,"Balance per hectare",0.664,15.97,"Greenhouse gases",630251.32,-11271.76,77553.22,125.356,29.66
+"Australia","Oceania",2009,"Balance per hectare",0.49,16.086,"Greenhouse gases",630906.55,655.230000000098,77745.96,126.04,29.085
+"Australia","Oceania",2010,"Balance per hectare",0.677,16.543,"Greenhouse gases",613332.65,-17573.9,75100.44,124.909,27.839
+"Australia","Oceania",2011,"Balance per hectare",0.811,17.128,"Greenhouse gases",594032.25,-19300.4,79931.9,125.328,26.59
+"Australia","Oceania",2012,"Balance per hectare",0.814,18.362,"Greenhouse gases",579077.44,-14954.8100000001,81442.77,126.081,25.472
+"Australia","Oceania",2013,"Balance per hectare",0.767,18.167,"Greenhouse gases",561101.35,-17976.09,81700.26,124.139,24.261
+"Australia","Oceania",2014,"Balance per hectare",0.976,19.428,"Greenhouse gases",555817.47,-5283.88,82028.02,122.233,23.676
+"Australia","Oceania",2015,"Balance per hectare",1.045,19.449,"Greenhouse gases",540912.2,-14905.27,78940.41,124.238,22.712
+"Australia","Oceania",2016,"Balance per hectare",0.776,18.526,"Greenhouse gases",512483.01,-28429.1899999999,77867.41,126.092,21.185
+"Australia","Oceania",2017,"Balance per hectare",1.006,19.755,"Greenhouse gases",509809.54,-2673.47000000003,81857.28,127.742,20.722
+"Australia","Oceania",2018,"Balance per hectare",1.001,19.091,"Greenhouse gases",514226.36,4416.82000000001,80580.48,128.026,20.583
+"Australia","Oceania",2019,"Balance per hectare",0.947,18.954,"Greenhouse gases",505857.06,-8369.29999999999,75065.86,126.752,19.943
+"Australia","Oceania",2020,"Balance per hectare",0.563,17.258,"Greenhouse gases",494232.96,-11624.1,72642.23,122.527,19.236
+"Brazil","South America",1990,"Balance per hectare",8.018,14.908,"Greenhouse gases",1346971.12,0,287131.5,100,9.044
+"Brazil","South America",1991,"Balance per hectare",8.604,16.322,"Greenhouse gases",1232547.09,-114424.03,295671.3,103.974,8.137
+"Brazil","South America",1992,"Balance per hectare",8.787,15.273,"Greenhouse gases",1384444.15,151897.06,301875.2,105.647,8.991
+"Brazil","South America",1993,"Balance per hectare",9.396,16.056,"Greenhouse gases",1458270.7,73826.55,303862.3,107.864,9.321
+"Brazil","South America",1994,"Balance per hectare",10.068,17.216,"Greenhouse gases",1476109.9,17839.2,311226.7,111.086,9.289
+"Brazil","South America",1995,"Balance per hectare",9.597,17.124,"Greenhouse gases",2490606.8,1014496.9,316916.5,115.585,15.436
+"Brazil","South America",1996,"Balance per hectare",9.642,16.733,"Greenhouse gases",1823022.42,-667584.38,303466.9,116.479,11.132
+"Brazil","South America",1997,"Balance per hectare",10.314,17.771,"Greenhouse gases",1544129,-278893.42,309781.6,120.88,9.292
+"Brazil","South America",1998,"Balance per hectare",10.404,17.992,"Greenhouse gases",1818402.45,274273.45,313783.2,124.108,10.785
+"Brazil","South America",1999,"Balance per hectare",10.319,18.761,"Greenhouse gases",1827505.27,9102.82000000007,317660,127.194,10.685
+"Brazil","South America",2000,"Balance per hectare",11.802,21.049,"Greenhouse gases",1911180.94,83675.6699999999,328366.6,131.218,10.999
+"Brazil","South America",2001,"Balance per hectare",11.907,19.06,"Greenhouse gases",1925772.25,14591.3100000001,339602.1,134.642,10.929
+"Brazil","South America",2002,"Balance per hectare",12.69,21.527,"Greenhouse gases",2159764.5,233992.25,352044.8,137.696,12.1
+"Brazil","South America",2003,"Balance per hectare",14.257,23.304,"Greenhouse gases",3090713.21,930948.71,372840.6,140.921,17.103
+"Brazil","South America",2004,"Balance per hectare",15.749,26.552,"Greenhouse gases",3324850.61,234137.4,387881.4,147.634,18.182
+"Brazil","South America",2005,"Balance per hectare",14.138,27.084,"Greenhouse gases",2352530.37,-972320.24,392492.4,150.22,12.717
+"Brazil","South America",2006,"Balance per hectare",14.46,26.09,"Greenhouse gases",1949017.48,-403512.89,392392.3,151.519,10.419
+"Brazil","South America",2007,"Balance per hectare",14.804,24.357,"Greenhouse gases",1662577.41,-286440.07,383932.4,152.652,8.795
+"Brazil","South America",2008,"Balance per hectare",13.792,22.508,"Greenhouse gases",1795467.98,132890.57,389962,157.895,9.4
+"Brazil","South America",2009,"Balance per hectare",14.368,24.706,"Greenhouse gases",1175957.37,-619510.61,396189.9,155.361,6.094
+"Brazil","South America",2010,"Balance per hectare",14.311,23.894,"Greenhouse gases",1202128.3,26170.9299999999,407072.4,166.664,6.168
+"Brazil","South America",2011,"Balance per hectare",15.145,24.827,"Greenhouse gases",1148605.39,-53522.9100000001,419107.3,172.655,5.842
+"Brazil","South America",2012,"Balance per hectare",15.955,26.545,"Greenhouse gases",1047965.21,-100640.18,414986.7,178.406,5.284
+"Brazil","South America",2013,"Balance per hectare",15.983,24.488,"Greenhouse gases",1281806.27,233841.06,420968.6,186.556,6.409
+"Brazil","South America",2014,"Balance per hectare",16.161,25.253,"Greenhouse gases",1182221.64,-99584.6300000001,425702.4,192.331,5.861
+"Brazil","South America",2015,"Balance per hectare",15.354,22.217,"Greenhouse gases",1274810.49,92588.8500000001,429510.1,188.491,6.265
+"Brazil","South America",2016,"Balance per hectare",16.831,27.869,"Greenhouse gases",1305569.78,30759.29,439212.8,183.61,6.364
+"France","Europe",1990,"Balance per hectare",18,71,"Greenhouse gases",523909.71,0,78176.82,100,9.239
+"France","Europe",1991,"Balance per hectare",15,59,"Greenhouse gases",549848.75,25939.04,77262.48,104.82,9.411
+"France","Europe",1992,"Balance per hectare",13,61,"Greenhouse gases",542460.11,-7388.64000000001,76630.17,103.042,9.239
+"France","Europe",1993,"Balance per hectare",11,51,"Greenhouse gases",517469.16,-24990.95,75366.27,99.152,8.776
+"France","Europe",1994,"Balance per hectare",11,53,"Greenhouse gases",511213.09,-6256.06999999995,74640.69,97.643,8.639
+"France","Europe",1995,"Balance per hectare",11,55,"Greenhouse gases",514204.21,2991.12,75237.87,98.769,8.659
+"France","Europe",1996,"Balance per hectare",11,58,"Greenhouse gases",525208.98,11004.77,75819.78,102.162,8.814
+"France","Europe",1997,"Balance per hectare",10,53,"Greenhouse gases",515961.29,-9247.69,75945.32,100.761,8.629
+"France","Europe",1998,"Balance per hectare",9,51,"Greenhouse gases",527811.81,11850.5200000001,75929.69,103.412,8.795
+"France","Europe",1999,"Balance per hectare",9,55,"Greenhouse gases",518216.72,-9595.09000000008,76294.49,102.501,8.592
+"France","Europe",2000,"Balance per hectare",7.9,42.6,"Greenhouse gases",527644.57,9427.84999999998,78506.06,101.458,8.689
+"France","Europe",2001,"Balance per hectare",7.1,49.5,"Greenhouse gases",519968.14,-7676.42999999993,78150.28,102.487,8.501
+"France","Europe",2002,"Balance per hectare",5.1,39.6,"Greenhouse gases",506757.45,-13210.69,76754.48,101.376,8.226
+"France","Europe",2003,"Balance per hectare",8.5,61,"Greenhouse gases",504713.83,-2043.62,73706.68,102.178,8.136
+"France","Europe",2004,"Balance per hectare",3.9,35.6,"Greenhouse gases",503416.02,-1297.81,74244.61,102.104,8.056
+"France","Europe",2005,"Balance per hectare",5.2,47.4,"Greenhouse gases",503205.43,-210.590000000026,73740.6,102.416,7.993
+"France","Europe",2006,"Balance per hectare",3.8,39.3,"Greenhouse gases",492620.78,-10584.65,73191.21,100.458,7.771
+"France","Europe",2007,"Balance per hectare",2.6,34.4,"Greenhouse gases",484336.31,-8284.47000000003,73686.8,98.655,7.594
+"France","Europe",2008,"Balance per hectare",3.1,35.6,"Greenhouse gases",479369.75,-4966.56,75100.47,97.644,7.475
+"France","Europe",2009,"Balance per hectare",-1.6,29.8,"Greenhouse gases",468924.12,-10445.63,74005.6,93.723,7.275
+"France","Europe",2010,"Balance per hectare",1.2,36.3,"Greenhouse gases",470208.61,1284.48999999999,72289.01,94.513,7.259
+"France","Europe",2011,"Balance per hectare",2.5,49.1,"Greenhouse gases",443902.84,-26305.77,72120.34,89.911,6.82
+"France","Europe",2012,"Balance per hectare",0.2,23.5,"Greenhouse gases",440645.66,-3257.18000000005,71933.47,90.269,6.737
+"France","Europe",2013,"Balance per hectare",1.6,29.7,"Greenhouse gases",442442.77,1797.11000000004,71179.71,90.214,6.731
+"France","Europe",2014,"Balance per hectare",0.5,29.6,"Greenhouse gases",415983.88,-26458.89,72736.91,84.454,6.276
+"France","Europe",2015,"Balance per hectare",0.9,37.3,"Greenhouse gases",423580.86,7596.97999999998,72460.41,85.107,6.368
+"France","Europe",2016,"Balance per hectare",2.9,47.5,"Greenhouse gases",432836.1,9255.23999999999,71756.33,85.543,6.49
+"France","Europe",2017,"Balance per hectare",0.4,33.7,"Greenhouse gases",446785.66,13949.56,71786.82,86.027,6.68
+"France","Europe",2018,"Balance per hectare",2.1,40.8,"Greenhouse gases",427214.36,-19571.3,70821.43,82.664,6.364
+"France","Europe",2019,"Balance per hectare",1.1,38,"Greenhouse gases",421617.29,-5597.07000000001,69150.18,80.921,6.26
+"Japan","Asia",1990,"Balance per hectare",71.16,170.765,"Greenhouse gases",1206061.85,0,37515.64,100,9.757
+"Japan","Asia",1991,"Balance per hectare",72.989,171.529,"Greenhouse gases",1211718.46,5656.60999999987,37131.79,101.139,9.764
+"Japan","Asia",1992,"Balance per hectare",73.166,169.135,"Greenhouse gases",1219843.45,8124.98999999999,37893.21,102.07,9.793
+"Japan","Asia",1993,"Balance per hectare",79.36,194.664,"Greenhouse gases",1212355.71,-7487.73999999999,37903.45,101.738,9.704
+"Japan","Asia",1994,"Balance per hectare",74.626,173.503,"Greenhouse gases",1273580.42,61224.71,38001.16,106.546,10.167
+"Japan","Asia",1995,"Balance per hectare",69.869,166.407,"Greenhouse gases",1295257.77,21677.3500000001,37096.27,108.231,10.315
+"Japan","Asia",1996,"Balance per hectare",67.832,165.237,"Greenhouse gases",1304484.98,9227.20999999996,36294.4,109.25,10.364
+"Japan","Asia",1997,"Balance per hectare",70.303,168.127,"Greenhouse gases",1295530.75,-8954.22999999998,36355.49,108.625,10.268
+"Japan","Asia",1998,"Balance per hectare",69.917,172.773,"Greenhouse gases",1246554.43,-48976.3200000001,35222.64,104.803,9.855
+"Japan","Asia",1999,"Balance per hectare",70.617,172.516,"Greenhouse gases",1270684.85,24130.4200000002,35263.06,106.644,10.03
+"Japan","Asia",2000,"Balance per hectare",71.969,170.782,"Greenhouse gases",1289217.89,18533.0399999998,35238.81,108.191,10.157
+"Japan","Asia",2001,"Balance per hectare",61.629,168.313,"Greenhouse gases",1262827.36,-26390.5299999998,34514.6,106.163,9.921
+"Japan","Asia",2002,"Balance per hectare",65.982,169.143,"Greenhouse gases",1285107.85,22280.49,34675.01,108.058,10.084
+"Japan","Asia",2003,"Balance per hectare",66.495,179.382,"Greenhouse gases",1280413.32,-4694.53000000003,34256.02,108.597,10.033
+"Japan","Asia",2004,"Balance per hectare",66.475,169.904,"Greenhouse gases",1275208.22,-5205.10000000009,34113.11,107.917,9.987
+"Japan","Asia",2005,"Balance per hectare",62.634,169.124,"Greenhouse gases",1288622.63,13414.4099999999,34527.66,108.519,10.086
+"Japan","Asia",2006,"Balance per hectare",65.342,172.237,"Greenhouse gases",1272113.02,-16509.6099999999,34367.62,106.834,9.946
+"Japan","Asia",2007,"Balance per hectare",70.842,185.684,"Greenhouse gases",1311399.24,39286.22,34731.59,109.609,10.243
+"Japan","Asia",2008,"Balance per hectare",48.798,151.905,"Greenhouse gases",1248395.59,-63003.6499999999,33618.89,103.874,9.747
+"Japan","Asia",2009,"Balance per hectare",49.422,152.573,"Greenhouse gases",1179536.17,-68859.4200000002,33439.29,98.205,9.213
+"Japan","Asia",2010,"Balance per hectare",60.429,173.579,"Greenhouse gases",1229192.8,49656.6300000001,33667.46,102.42,9.599
+"Japan","Asia",2011,"Balance per hectare",57.485,170.595,"Greenhouse gases",1281621.09,52428.29,32928.63,106.413,10.026
+"Japan","Asia",2012,"Balance per hectare",61.38,173.891,"Greenhouse gases",1321698.39,40077.2999999998,32555.29,109.789,10.359
+"Japan","Asia",2013,"Balance per hectare",58.795,180.019,"Greenhouse gases",1340696.67,18998.28,32782.1,110.716,10.522
+"Japan","Asia",2014,"Balance per hectare",58.893,175.389,"Greenhouse gases",1294776.55,-45920.1199999999,32373.6,106.868,10.176
+"Japan","Asia",2015,"Balance per hectare",58.089,172.269,"Greenhouse gases",1261703.75,-33072.8,32118.87,103.821,9.927
+"Japan","Asia",2016,"Balance per hectare",56.794,179.295,"Greenhouse gases",1247860.93,-13842.8200000001,32142.07,102.428,9.831
+"Russia","Europe",1992,"Balance per hectare",4.906,24.038,"Greenhouse gases",2481680.17,-487556.68,225513.48,79.727,16.707
+"Russia","Europe",1993,"Balance per hectare",3.588,21.287,"Greenhouse gases",2286900.94,-194779.23,208701.71,75.337,15.404
+"Russia","Europe",1994,"Balance per hectare",2.301,16.351,"Greenhouse gases",1940655.87,-346245.07,186423.78,67.038,13.077
+"Russia","Europe",1995,"Balance per hectare",2.201,15.852,"Greenhouse gases",1811559.52,-129096.35,165439.98,65.393,12.209
+"Russia","Europe",1996,"Balance per hectare",1.787,13.421,"Greenhouse gases",1693785.73,-117773.79,153609.31,63.774,11.432
+"Russia","Europe",1997,"Balance per hectare",0.881,9.054,"Greenhouse gases",1500686.28,-193099.45,141352.87,60.059,10.146
+"Russia","Europe",1998,"Balance per hectare",1.222,11.02,"Greenhouse gases",1459645.77,-41040.51,127449.64,59.055,9.884
+"Russia","Europe",1999,"Balance per hectare",0.702,9.503,"Greenhouse gases",1444050.24,-15595.53,120539.93,60.018,9.809
+"Russia","Europe",2000,"Balance per hectare",0.591,8.166,"Greenhouse gases",1421744.11,-22306.1299999999,120764.27,59.844,9.698
+"Russia","Europe",2001,"Balance per hectare",0.244,6.569,"Greenhouse gases",1404382.37,-17361.74,118229.66,60.905,9.621
+"Russia","Europe",2002,"Balance per hectare",0.197,5.456,"Greenhouse gases",1358516.06,-45866.3100000001,117030.51,60.27,9.349
+"Russia","Europe",2003,"Balance per hectare",0.512,6.825,"Greenhouse gases",1386494.14,27978.0799999998,114733.86,61.269,9.591
+"Russia","Europe",2004,"Balance per hectare",0.317,5.497,"Greenhouse gases",1408500.41,22006.27,111625.08,61.663,9.793
+"Russia","Europe",2005,"Balance per hectare",0.129,4.526,"Greenhouse gases",1430913.66,22413.25,106750.44,62.231,9.998
+"Russia","Europe",2006,"Balance per hectare",0.114,4.231,"Greenhouse gases",1490744.16,59830.5,104694.36,64.112,10.462
+"Russia","Europe",2007,"Balance per hectare",0.209,5.138,"Greenhouse gases",1471162.34,-19581.8199999998,106946.09,64.111,10.352
+"Russia","Europe",2008,"Balance per hectare",-0.184,3.668,"Greenhouse gases",1463363.81,-7798.53000000003,110781.2,65.038,10.309
+"Russia","Europe",2009,"Balance per hectare",0.035,4.883,"Greenhouse gases",1255332.96,-208030.85,108827.03,60.792,8.846
+"Russia","Europe",2010,"Balance per hectare",0.761,8.879,"Greenhouse gases",1321327.29,65994.3300000001,105420.26,63.772,9.28
+"Russia","Europe",2011,"Balance per hectare",-0.001,5.067,"Greenhouse gases",1425390.51,104063.22,108071.43,65.562,9.97
+"Russia","Europe",2012,"Balance per hectare",0.567,8.068,"Greenhouse gases",1439469.57,14079.0600000001,107099.41,66.348,10.052
+"Russia","Europe",2013,"Balance per hectare",-0.012,5.374,"Greenhouse gases",1429172.92,-10296.6500000001,109566.79,64.48,9.959
+"Russia","Europe",2014,"Balance per hectare",-0.088,4.271,"Greenhouse gases",1380210.77,-48962.1499999999,109447.17,64.348,9.597
+"Russia","Europe",2015,"Balance per hectare",-0.066,5.849,"Greenhouse gases",1450053.37,69842.6000000001,110545.43,64.212,9.904
+"Russia","Europe",2016,"Balance per hectare",-0.107,5.77,"Greenhouse gases",1418657.76,-31395.6100000001,114254.25,64.232,9.672
+"Russia","Europe",2017,"Balance per hectare",-0.208,3.256,"Greenhouse gases",1479737.13,61079.3699999999,115168.65,65.77,10.077
+"Russia","Europe",2018,"Balance per hectare",0.186,6.718,"Greenhouse gases",1567952.66,88215.53,114800.55,67.746,10.679
+"Russia","Europe",2019,"Balance per hectare",0.271,6.806,"Greenhouse gases",1586015.7,18063.04,116449.89,67.471,10.807
+"Russia","Europe",2020,"Balance per hectare",0.468,8.589,"Greenhouse gases",1503801.98,-82213.72,118805.28,65.097,10.268
+"South Africa","Africa",1990,"Balance per hectare",0.714,-6.29,"Greenhouse gases",330366.99,0,40473.85,100,8.977
+"South Africa","Africa",1994,"Balance per hectare",0.315,-7.161,"Greenhouse gases",361221.2,30854.21,35455.52,109.353,8.905
+"South Africa","Africa",2000,"Balance per hectare",0.216,-6.277,"Greenhouse gases",444396.95,83175.75,681.37,133.865,9.883
+"South Africa","Africa",2001,"Balance per hectare",0.425,-6.123,"Greenhouse gases",457600.23,13203.28,815.101,135.028,10.041
+"South Africa","Africa",2002,"Balance per hectare",0.409,-5.639,"Greenhouse gases",472534.14,14933.91,1022.275,138.608,10.182
+"South Africa","Africa",2003,"Balance per hectare",0.346,-5.913,"Greenhouse gases",482791.43,10257.29,945.208,144.189,10.302
+"South Africa","Africa",2004,"Balance per hectare",0.444,-5.976,"Greenhouse gases",506589.47,23798.04,1021.441,148.295,10.693
+"South Africa","Africa",2005,"Balance per hectare",0.051,-7.085,"Greenhouse gases",520505.03,13915.5600000001,622.466,147.407,10.862
+"South Africa","Africa",2006,"Balance per hectare",0.354,-5.821,"Greenhouse gases",514503.76,-6001.27000000002,839.046,146.309,10.611
+"South Africa","Africa",2007,"Balance per hectare",0.406,-5.356,"Greenhouse gases",537626.51,23122.75,1009.424,154.024,10.95
+"South Africa","Africa",2008,"Balance per hectare",0.237,-6.4,"Greenhouse gases",546176.9,8550.39000000001,1139.114,153.274,10.977
+"South Africa","Africa",2009,"Balance per hectare",0.25,-6.44,"Greenhouse gases",551913.26,5736.35999999999,1081.935,160.803,10.936
+"South Africa","Africa",2010,"Balance per hectare",0.242,-6.456,"Greenhouse gases",526248.69,-25664.5700000001,1160.7,151.489,10.273
+"South Africa","Africa",2011,"Balance per hectare",0.311,-6.253,"Greenhouse gases",517322.43,-8926.25999999995,1299.524,150.874,9.945
+"South Africa","Africa",2012,"Balance per hectare",0.328,-6.144,"Greenhouse gases",529064.2,11741.77,1422.153,154.252,10.015
+"South Africa","Africa",2013,"Balance per hectare",0.094,-6.147,"Greenhouse gases",519233.76,-9830.43999999994,1288.339,154.065,9.678
+"South Africa","Africa",2014,"Balance per hectare",0.335,-5.474,"Greenhouse gases",503361.75,-15872.01,1442.476,147.943,9.238
+"South Africa","Africa",2015,"Balance per hectare",0.628,-6.162,"Greenhouse gases",495477.39,-7884.35999999999,1271.832,148.399,8.957
+"South Africa","Africa",2016,"Balance per hectare",0.52,-5.042,"Greenhouse gases",479260.11,-16217.28,1630.817,147.593,8.537
+"South Africa","Africa",2017,"Balance per hectare",-0.038,-4.685,"Greenhouse gases",479958.4,698.290000000037,1901.7,143.472,8.422
+"South Africa","Africa",2018,"Balance per hectare",0.328,-6.209,"Greenhouse gases",490282.64,10324.24,1514.51,145.976,8.474
+"South Africa","Africa",2019,"Balance per hectare",0.309,-6.525,"Greenhouse gases",475861.86,-14420.78,1519.785,143.272,8.103
+"South Africa","Africa",2020,"Balance per hectare",-0.004,-6.047,"Greenhouse gases",442022.9,-33838.96,1526.92,134.968,7.424
+"Spain","Europe",1990,"Balance per hectare",5,30,"Greenhouse gases",253814.28,0,33022.58,100,6.531
+"Spain","Europe",1991,"Balance per hectare",4,29,"Greenhouse gases",261369.91,7555.63,31639.5,102.688,6.712
+"Spain","Europe",1992,"Balance per hectare",4,29,"Greenhouse gases",270608.59,9238.68000000002,31753.3,105.952,6.912
+"Spain","Europe",1993,"Balance per hectare",3,24,"Greenhouse gases",259342.48,-11266.11,30833.98,102.441,6.59
+"Spain","Europe",1994,"Balance per hectare",5,32,"Greenhouse gases",276732.54,17390.06,32367.44,108.055,6.997
+"Spain","Europe",1995,"Balance per hectare",6,34,"Greenhouse gases",290576.25,13843.71,32792.49,113.66,7.316
+"Spain","Europe",1996,"Balance per hectare",5,33,"Greenhouse gases",281301.92,-9274.33000000002,35383.43,110.717,7.053
+"Spain","Europe",1997,"Balance per hectare",5,30,"Greenhouse gases",295436.2,14134.28,35338.72,115.609,7.377
+"Spain","Europe",1998,"Balance per hectare",6,33,"Greenhouse gases",304316.7,8880.5,36276.35,118.933,7.567
+"Spain","Europe",1999,"Balance per hectare",7,39,"Greenhouse gases",326925.7,22609,36904.4,128.033,8.098
+"Spain","Europe",2000,"Balance per hectare",4.9,40.2,"Greenhouse gases",339879.56,12953.86,38754.16,133.216,8.381
+"Spain","Europe",2001,"Balance per hectare",6.7,40.5,"Greenhouse gases",336738.08,-3141.47999999998,38446.11,132.787,8.26
+"Spain","Europe",2002,"Balance per hectare",6.1,35.5,"Greenhouse gases",356375.7,19637.62,37980.18,139.28,8.603
+"Spain","Europe",2003,"Balance per hectare",5.8,39.5,"Greenhouse gases",364050.48,7674.77999999997,38903.98,141.785,8.628
+"Spain","Europe",2004,"Balance per hectare",5.3,35.8,"Greenhouse gases",378957.54,14907.06,37973.69,147.228,8.842
+"Spain","Europe",2005,"Balance per hectare",6,38.3,"Greenhouse gases",394377.96,15420.42,35896.95,152.501,9.032
+"Spain","Europe",2006,"Balance per hectare",4.2,35.7,"Greenhouse gases",385336.34,-9041.62,35150.18,150.185,8.686
+"Spain","Europe",2007,"Balance per hectare",4.9,34.5,"Greenhouse gases",398664.57,13328.23,35867.81,153.916,8.813
+"Spain","Europe",2008,"Balance per hectare",1.1,26.8,"Greenhouse gases",365116.79,-33547.78,32961.15,142.218,7.94
+"Spain","Europe",2009,"Balance per hectare",2.8,31.1,"Greenhouse gases",328155.12,-36961.67,33482,128.536,7.077
+"Spain","Europe",2010,"Balance per hectare",3.2,35.2,"Greenhouse gases",310507.42,-17647.7,33208.2,123.267,6.669
+"Spain","Europe",2011,"Balance per hectare",2.4,29.5,"Greenhouse gases",311071.32,563.900000000023,32688.33,123.26,6.656
+"Spain","Europe",2012,"Balance per hectare",4.5,33.6,"Greenhouse gases",306463.85,-4607.47000000003,31623.81,120.785,6.553
+"Spain","Europe",2013,"Balance per hectare",2.9,28.7,"Greenhouse gases",280190.48,-26273.37,31338.11,111.38,6.014
+"Spain","Europe",2014,"Balance per hectare",3.8,39.4,"Greenhouse gases",279804.26,-386.219999999972,32621.16,111.896,6.023
+"Spain","Europe",2015,"Balance per hectare",3.9,38.5,"Greenhouse gases",289064.89,9260.63,33236.25,115.958,6.228
+"Spain","Europe",2016,"Balance per hectare",6.9,39,"Greenhouse gases",276861.91,-12202.98,33305.31,111.796,5.96
+"Spain","Europe",2017,"Balance per hectare",8.3,49.3,"Greenhouse gases",289396.86,12534.95,34084.83,116.334,6.219
+"United States","North America",1990,"Balance per hectare",2.776,32.222,"Greenhouse gases",5606376.53,0,548049.16,100,22.459
+"United States","North America",1991,"Balance per hectare",2.944,34.153,"Greenhouse gases",5531222.09,-75154.4400000004,540745.92,98.938,21.864
+"United States","North America",1992,"Balance per hectare",2.485,31.317,"Greenhouse gases",5652355.92,121133.83,543748.62,100.733,22.035
+"United States","North America",1993,"Balance per hectare",3.572,36.8,"Greenhouse gases",5776447.2,124091.28,561732.36,102.346,22.224
+"United States","North America",1994,"Balance per hectare",2.823,33.93,"Greenhouse gases",5871586.58,95139.3799999999,566157.53,103.974,22.315
+"United States","North America",1995,"Balance per hectare",3.558,37.091,"Greenhouse gases",5973118.28,101531.7,572213.84,105.158,22.432
+"United States","North America",1996,"Balance per hectare",3.279,36.193,"Greenhouse gases",6157175.36,184057.08,577540.93,108.265,22.856
+"United States","North America",1997,"Balance per hectare",3.154,34.781,"Greenhouse gases",6229354.09,72178.7299999995,566768.31,109.124,22.848
+"United States","North America",1998,"Balance per hectare",3.076,34.139,"Greenhouse gases",6274639.2,45285.1100000003,574997.06,109.825,22.746
+"United States","North America",1999,"Balance per hectare",2.869,35.512,"Greenhouse gases",6328900.89,54261.6899999995,571724.9,110.521,22.681
+"United States","North America",2000,"Balance per hectare",2.822,34.364,"Greenhouse gases",6533374.78,204473.890000001,564996.91,113.593,23.155
+"United States","North America",2001,"Balance per hectare",2.895,33.215,"Greenhouse gases",6410951.95,-122422.83,573120.99,111.811,22.497
+"United States","North America",2002,"Balance per hectare",3.611,36.175,"Greenhouse gases",6496664.71,85712.7599999998,577240.26,112.423,22.587
+"United States","North America",2003,"Balance per hectare",2.853,35.521,"Greenhouse gases",6524558.97,27894.2599999998,576707.5,113.339,22.49
+"United States","North America",2004,"Balance per hectare",2.845,33.329,"Greenhouse gases",6754775.29,230216.32,579374.34,115.061,23.069
+"United States","North America",2005,"Balance per hectare",2.916,33.098,"Greenhouse gases",6696263.74,-58511.5499999998,577719.13,115.261,22.66
+"United States","North America",2006,"Balance per hectare",3.026,33.637,"Greenhouse gases",6589491.65,-106772.09,574740.6,114.191,22.084
+"United States","North America",2007,"Balance per hectare",2.829,34.973,"Greenhouse gases",6737347.32,147855.67,594020.13,115.786,22.366
+"United States","North America",2008,"Balance per hectare",2.497,33.659,"Greenhouse gases",6531127.3,-206220.02,586175.65,112.443,21.477
+"United States","North America",2009,"Balance per hectare",1.048,28.987,"Greenhouse gases",6120284.54,-410842.76,585703.91,105.448,19.951
+"United States","North America",2010,"Balance per hectare",2.121,31.437,"Greenhouse gases",6307176.8,186892.26,590985.63,108.8,20.39
+"United States","North America",2011,"Balance per hectare",2.584,33.891,"Greenhouse gases",6115978.54,-191198.26,582369.36,106.472,19.629
+"United States","North America",2012,"Balance per hectare",2.581,34.45,"Greenhouse gases",5884941.23,-231037.31,572600.86,102.824,18.749
+"United States","North America",2013,"Balance per hectare",2.265,30.472,"Greenhouse gases",6092439.67,207498.439999999,597546.16,105.462,19.276
+"United States","North America",2014,"Balance per hectare",1.849,27.666,"Greenhouse gases",6129688.87,37249.2000000002,603008.19,106.338,19.252
+"United States","North America",2015,"Balance per hectare",1.57,27.535,"Greenhouse gases",6065495.12,-64193.75,604944.41,103.854,18.911
+"United States","North America",2016,"Balance per hectare",1.256,24.832,"Greenhouse gases",5763094.6,-302400.52,601754.03,101.404,17.838
+"United States","North America",2017,"Balance per hectare",2.812,27.037,"Greenhouse gases",5787628.43,24533.8300000001,613096.61,101.148,17.801
+"United States","North America",2018,"Balance per hectare",2.946,27.518,"Greenhouse gases",5989701.89,202073.46,629494.02,104.123,18.326
+"United States","North America",2019,"Balance per hectare",3.469,30.534,"Greenhouse gases",5913871.79,-75830.0999999996,614462.11,102.013,18.012

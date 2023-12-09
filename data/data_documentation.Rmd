@@ -1,0 +1,54 @@
+## Data Documentation
+
+### original data sources
+
+#### Agri-Environmental indicators: Nutrients
+https://stats.oecd.org/Index.aspx?DataSetCode=AEI_NUTRIENTS#
+
+Focuses on greenhouse gas emissions, providing annual data for each country. It encompasses trends in man-made emissions of major greenhouse gases. The dataset covers emissions of CO2, CH4, nitrous oxide (N2O), hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), sulphur hexafluoride (SF6), and nitrogen trifluoride (NF3). Notably, it excludes indirect CO2, emphasizing the role of these emissions in the greenhouse effect, a key factor in global warming and climate change.
+
+#### Greenhouse gas emissions by source
+https://stats.oecd.org/Index.aspx?DataSetCode=AIR_GHG#
+
+Focuses on agricultural nutrient dynamics. It includes yearly data on Nutrient inputs, Total Fertilizers, Net input of manure, Livestock Manure Production, Other Nutrient Inputs, Nutrient outputs, Total Harvested Crops, and Total Forage. The dataset categorizes data based on specific agricultural indicators, particularly highlighting the importance of fodder crops in livestock rearing. Gross nutrient balances (Nitrogen and Phosphate) are calculated as the difference between nutrient inputs and outputs, serving as indicators of environmental pressures, such as soil fertility decline or the risk of soil, water, and air pollution from nutrient surplus.
+
+### Nutrients_Greenhouse.csv Dataset Variables:
+
+#### Country
+Represents the country for which the data is recorded.
+
+#### Region
+Indicates the geographic region to which the country belongs.
+
+#### Year
+Refers to the specific year in which the data was recorded.
+
+#### Indicator
+Describes the type of data or environmental indicator being measured.
+
+#### Phosphorus (kg)
+Represents the amount of phosphorus in kilograms. In the context of nutrient balances, it could indicate the surplus or deficit of phosphorus in agricultural systems.
+
+#### Nitrogen (kg)
+Represents the amount of nitrogen in kilograms. Similar to phosphorus, it could indicate the surplus or deficit of nitrogen in agricultural systems.
+
+#### Pollutant
+Specifies the type of greenhouse gas or pollutant being measured
+
+#### Total emissions including LULUCF (Tonnes of CO2 equivalent)
+Represents the total emissions of greenhouse gases, including emissions from land use, land-use change, and forestry (LULUCF), measured in tonnes of CO2 equivalent.
+
+#### Total emissions yearly diff (Tonnes of CO2 equivalent)
+Represents the yearly difference in total emissions, measured in tonnes of CO2 equivalent. This indicates the annual change in greenhouse gas emissions.
+
+#### Agriculture (Tonnes of CO2 equivalent)
+Specifically represents emissions from agriculture, measured in tonnes of CO2 equivalent.
+
+#### Total emissions including LULUCF (Index 1990=100)
+Represents the total emissions of greenhouse gases, including LULUCF, indexed to the year 1990. This provides a comparsion measure relative to the emissions in 1990.
+
+#### Total emissions including LULUCF per capita (kg/per capita)
+Represents the total emissions of greenhouse gases, including LULUCF, per capita (per person), measured in kilograms of CO2 equivalent. This provides a measure of emissions intensity on a per capita basis.
+
+#### Summary Statistics
+225 rows by  12 cols
