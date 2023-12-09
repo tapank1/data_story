@@ -318,7 +318,7 @@ p_vs_n <- ggplot(data_filtered, aes(x=Year)) +
   geom_line(aes(y=`Phosphorus..kg.`, color="Phosphorus"), na.rm=TRUE) +
   geom_line(aes(y=`Nitrogen..kg.`, color="Nitrogen"), na.rm=TRUE) +
   facet_wrap(~Country) +
-  labs(color="Element", y="Quantity (kg)", title="Phosphorus vs Nitrogen over Year for USA and Brazil") +
+  labs(color="Element", y="Quantity (kg)", title="Phosphorus vs Nitrogen over Year for USA and France") +
   theme_minimal()
 
 p_vs_n
@@ -336,7 +336,7 @@ data_filtered <- data[data$Country %in% c("United States", "France"),]
 
 co2_year <- ggplot(data_filtered, aes(x=Year, y=`Agriculture..Tonnes.of.CO2.equivalent.`, color=Country)) +
   geom_line(na.rm=TRUE) +
-  labs(y="Agriculture CO2 equivalent (Tonnes)", title="Agriculture CO2 equivalent over Year for USA and Brazil") +
+  labs(y="Agriculture CO2 equivalent (Tonnes)", title="Agriculture CO2 equivalent over Year for USA and France") +
   theme_minimal()
 
 
