@@ -1,0 +1,378 @@
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+```
+
+# Introduction
+
+### Relevance of Topic
+
+Human activities, primarily the burning of fossil fuels, deforestation, and agricultural practices, have led to an increase in greenhouse gas emissions, encompassing carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O). The United States significantly influences global greenhouse gas emissions, impacting various industries, including agriculture. These emissions contribute to changes in temperature, precipitation patterns, and extreme weather events, affecting agricultural practices, growing seasons, and crop types. The resulting climate variations can impact soil health, nutrient cycles, and water availability for farming, directly impacting food production. Given the important role of agriculture in the U.S. economy, disruptions from greenhouse gas emissions and climate change have substantial implications. Our research focuses on greenhouse gas emissions and nutrient dynamics in agriculture, with a particular interest in France, a country that has effectively reduced greenhouse emissions despite the global increase. As one of Europe's major agricultural producers, France is susceptible to climate change due to its sensitivity to temperature variations. Greenhouse gas emissions contribute to climate change, affecting crop yields, agricultural productivity, and food security. In France, the effort to reduce emissions reflects a widespread commitment from leaders to citizens, emphasizing the importance of mitigating the impact on agriculture and securing the country's food supply.
+
+
+### Existing Knowledge
+
+In terms of existing knowledge, greenhouse emissions are still a serious problem all over the word, because they increase continuously due to human activities. Moreover, it also results in other serious problems, like climate change and the World Bank estimates that climate change could push an additional 100 million people into extreme poverty by 2030. Some countries have already been aware of this issue and began to reduce producing greenhouse emissions through policies. France's recent endeavors in reducing greenhouse gas emissions present a compelling case study. The French government has set a target to cut greenhouse emissions by 50% by 2030 compared to 1990 levels, illustrating a strong commitment to climate action ([Catherine 2023](https://phys.org/news/2023-05-france-unveils-ambitious-emissions-cutting.html#:~:text=Macron%2C%20who%20has%20admitted%20to,planning%20the%20ecological%20transition)). This includes a significant investment of an additional 7 billion euros in 2024 for energy and climate transition, emphasizing the country's dedication to sustainable energy solutions.  Additionally, promoting the adoption of electric vehicles and shifting freight transport to more environmentally friendly modes highlights France's efforts to reduce transport-related emissions. Despite already achieving a 25% reduction in emissions from 1990 levels, France faces the challenge of further substantial reductions, involving efforts from large companies, households, and local administrations. President Emmanuel Macron's pledge to position climate change at the core of his administration's agenda and to make France the first major nation to abandon fossil fuels underscores the country's proactive stance in environmental sustainability and ecological transition.
+
+### Research Questions
+
+Greenhouse gas emissions and agriculture are two major topics that have significant implications for the environment, the economy, and the society. We want to answer the following questions:
+
+**How have greenhouse gas emissions changed over time on a per capita basis for each country?**
+
+**What is the relationship between greenhouse gas emissions (index) and time in the France, and can a linear regression model be applied to predict emissions for the next 20 years?**
+
+**How does the relationship between phosphorus and nitrogen levels compare to agricultural emissions in the USA and France?**
+ 
+
+### Significance of Report
+
+Understanding greenhouse gas emissions and their impact is essential for a variety of reasons, particularly from a policymaking perspective. 
+
+Firstly, even if it is commendable that there is a whole decrease trend in total greenhouse gas emissions in France over recent years, it doesn't always provide a complete picture. To be specific, total emissions per capita offer a more nuanced view. For instance, even if a country's total emissions are low, its citizens might still experience high levels of pollution. This is particularly relevant in smaller countries where total emissions might be low, but per capita emissions are high. Understanding this distinction helps policymakers assess whether their strategies effectively benefit their citizens. It's crucial to decrease not just the quantity of total emissions but also evaluate the qualitative impact on the populace.
+
+Secondly, predictive analysis is vital for effective policymaking. By understanding the trends of total greenhouse emissions index both in the current and future, policymakers can review the effect of their policies and make corresponding adjustments through issuing policies. Moreover, it is a kind of foresight which allows for proactive rather than reactive measures. Additionally, according to the predicted changes in greenhouse gas emissions, adjusting policies can lead to more sustainable and long-term solutions. This foresight is particularly significant in a rapidly changing global climate landscape, where delayed responses can have amplified consequences.
+
+Thirdly, it is also significant Identifying Key Areas for Intervention: The diverse sources of greenhouse gas emissions can be overwhelming for policymakers. By breaking down the major contributors – such as the role of agriculture, which is a significant source due to practices like using fertilizers and livestock farming – policymakers can prioritize areas where intervention can have the greatest impact. Understanding the relative contribution of different sectors allows for targeted and efficient policy design. For instance, if agriculture is found to be a major contributor, then policies can be focused on sustainable farming practices, reducing reliance on chemical fertilizers, and promoting more efficient land use.
+In essence, a comprehensive understanding of greenhouse gas emissions is not just about recognizing the problem but also about identifying effective solutions and strategies. It enables policymakers to make informed decisions, balance various economic and environmental factors, and ultimately work towards a more sustainable and healthier future for their citizens.
+
+# Data
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+data <- read.csv("data/ghg_and_nutrients_data.csv")
+```
+
+### Dataset Utilization
+
+These datasets are from OECD, which is an organization known for maintaining high standards in data collection, making its datasets widely used and respected in research, policy analysis, and international comparisons. According to the U.S Departmant of State, "OECD is one of the world's largest and most reliable sources of statistical, economic and social data." Additionally, their data sets contains infomation from all around the world, which is needed for the scope of the research we are doing. 
+
+### Dataset Origins
+
+#### Agri-Environmental indicators: Nutrients
+https://stats.oecd.org/Index.aspx?DataSetCode=AEI_NUTRIENTS#
+
+#### Greenhouse gas emissions by source
+https://stats.oecd.org/Index.aspx?DataSetCode=AIR_GHG#
+
+### Data Collection Source
+
+The Organization for Economic Cooperation and Development (OECD) The Organization for Economic Co-operation and Development (OECD) is a forum where the governments of 37 democracies with market-based economies collaborate to develop policy standards to promote sustainable economic growth.
+
+### Data Permissions and Restrictions
+
+The data is freely available to the public for educational, research, and non-commercial purposes. Users are typically allowed to access, download, and use the data for personal or research purposes without requiring explicit permission to use but is protected by copyright and they request that we cite the OECD as the source.
+
+### Dataset Content and Scope
+
+
+#### Greenhouse gas emissions by source
+
+**Description:** The first dataset focuses on greenhouse gas emissions, providing insights into trends in man-made emissions of major greenhouse gases. It includes variables such as Country, Pollutant, Variable, Time (year), Unit, Value, etc.
+
+**Population:** The population of this dataset consists of countries globally, as it aims to capture the trends in greenhouse gas emissions across different nations.
+
+**Sample:** The sample refers to the specific instances of data within the dataset, representing individual countries in specific years. Each row in the dataset corresponds to a particular country's greenhouse gas emissions for a given year.
+
+#### Agri-Environmental indicators: Nutrients
+
+**Description:** The second dataset focuses on agri-environmental indicators related to nutrients, including variables like Country, Nutrients, Indicators, Time (year), Unit, Value, etc. The dataset provides information on nutrient inputs, fertilizer usage, livestock manure production, and other indicators.
+
+**Population:** The population for this dataset comprises of countries, and it specifically targets the agri-environmental domain, focusing on the relationship between nutrient inputs and outputs in agricultural systems.
+
+**Sample:** Similar to the greenhouse gas emissions dataset, the sample consists of individual data points corresponding to specific countries and years. Each row represents the values of various nutrient-related indicators for a particular country in a given year.
+
+### Data Quality Considerations
+
+No significant data quality issues were seen. The datasets were generally well structured, and the missing data for China and Russia was a small concern.
+
+#### Column Names and Formatting:
+The dataset had minor inconveniences related to column names, which were excessively long and included spaces. R is sensitive to spaces in column names, and long names may affect code readability and functionality. To address this, we performed necessary data cleaning and renaming of columns, ensuring that names were concise, informative, and followed R's naming conventions.
+
+#### Missing Data Records for China:
+The dataset had missing data records for China. To address this issue, we used a different country in our research questions analysis. 
+
+### Rows in Final Dataset
+
+Each row represents environmental and agricultural characteristics, including greenhouse gas emissions and nutrient balances for a specific for a specific country, region, and year. 
+
+### Observation Count
+225
+
+### Relevant Variables and Codes
+
+- **Country:** Character (chr)
+- **Region:** Character (chr)
+- **Year:** Integer (int)
+- **Indicator:** Character (chr)
+- **Phosphorus (kg):** Numeric (num)
+- **Nitrogen (kg):** Numeric (num)
+- **Pollutant:** Character (chr)
+- **Total emissions including LULUCF (Tonnes of CO2 equivalent):** Numeric (num)
+- **Total emissions yearly diff (Tonnes of CO2 equivalent):** Numeric (num)
+- **Agriculture (Tonnes of CO2 equivalent):** Numeric (num)
+- **Total emissions including LULUCF (Index 1990=100):** Numeric (num)
+- **Total emissions including LULUCF per capita (kg/per capita):** Numeric (num)
+
+
+### Data Quality Issues
+No data quality issues that hinder our analysis. However, in our final dataset, the data records for several countries like Russia and Japan start and end at different years. Since most data records start at 1990, we chose that as the start and 2020 as the end. The data is technically not missing because it was never recorded in the original dataset, but we want to highlight that fact. 
+
+# Methods
+
+### Variable Inclusion Rationale
+
+In our analysis, we included all the variables listed in the **Relevant Variables and Codes** section. Each of these variables plays a role in providing insights from the dataset and helps us answer our research questions. Variables such as 'Country' and 'Region' are important for grouping and contextualizing the data geographically. 'Year' is essential for examining temporal trends. 
+
+The environmental indicators, including 'Phosphorus (kg)', 'Nitrogen (kg)', 'Pollutant', 'Total emissions including LULUCF (Tonnes of CO2 equivalent)', 'Total emissions yearly diff (Tonnes of CO2 equivalent)', 'Agriculture (Tonnes of CO2 equivalent)', 'Total emissions including LULUCF (Index 1990=100)', and 'Total emissions including LULUCF per capita (kg/per capita)', are included to answer our research questions about greenhouse gas emissions.
+
+### Data Processing Details
+
+**Data Cleaning (Agriculture Data):** We filter the agriculture data to include only certain countries and the “Balance per hectare” indicator. Then remove unnecessary columns and renames others for clarity. During the initial exploration of the datasets, we saw that there were duplicate column names indicating the same values. Examples included columns such as COU and Country or POL and Pollutant. To
+simplify the datasets, we removed one of the redundant columns while keeping the one with a more user-friendly name. We then reshape using pivot_wider to create a wider format where each nutrient has its own column. This makes the data easier to analyze.
+
+**Data Cleaning (Greenhouse Data):** We filter the greenhouse data to include only certain countries and variables. Then remove unnecessary columns and reshaped the data to a wider format. The script also calculates the yearly difference in total emissions and adds this as a new column, this is our added continuous variable. 
+
+**Data Merging:** We find the latest start year between the two datasets becuase the two datasets started at different years, then filter both datasets to include only years from this start year onwards. This ensures that the datasets cover the same time period when they are merged. Then we merge the datasets based on the “Country” and “Year” columns. Then, we add a “Region” column to the merged data, which could be useful for grouping countries by region in subsequent analyses, this is our added categorical variable. 
+
+(5 points) any technical decisions you did, such as either to remove missings, or replace missing values with another one?
+(5 points) if you use more complex statistical methods, such as regression, these should also discussed here.
+
+### Sample Selection Process
+
+The sample selection is based on the specific countries and variables we were interested in for our research questions. We filter the data to include only these countries and variables.
+
+**Countries:** "United States", "Russia", "Japan", "France", "Spain", "Australia", "South Africa", "Brazil"
+
+**Variables:** "Total emissions including LULUCF (Tonnes of CO2 equivalent)", "Total emissions including LULUCF (Tonnes of CO2 equivalent)", Total emissions including LULUCF (Index 1990=100)", "Total emissions including LULUCF per capita (kg/per capita)", "Phosphorus (kg)", "Nitrogen (kg)"
+
+### Treatment of Missing Values
+
+Our dataset did not have missing values for the variables we were interested in, so we did not explicitly handle missing data. However, we initially wanted to do China for the Asia continent, but the data for China is only recorded from 1994 to 2014. We figured this was not enough sample to plot, so we decided upon a differnt country. 
+
+### Complex Statistical Methods
+
+We do not use any complex statistical methods to clean or process our data. However, we did use regression to answer one of our research questions. 
+
+# Results
+  
+#### How have greenhouse gas emissions changed over time on a per capita basis for each country?
+
+### Insights from the Data
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+filtered_data <- subset(data, select = c("Country","Year","Total.emissions.including.LULUCF.per.capita..kg.per.capita."))
+
+GHG_overtime_capita <- ggplot(filtered_data, aes(x = Year, y = Total.emissions.including.LULUCF.per.capita..kg.per.capita., color = Country)) +
+  geom_line() +
+  labs(title = "Greenhouse Gas Emission Per Capita Over Time", x = "Year", y = "Emission per Capita (kg/per capita)", color = "Country") + theme_minimal() 
+
+GHG_overtime_capita
+
+```
+
+
+The graph shows annual emissions of greenhouse gases (GHGs) per capita for some nation in different continents. Overall, the trends of greenhouse emissions in these countries are decline or stay constant. For France, the graph shows a steady reduction of greenhouse emissions per capita over time, but the decline is not much. For, Spain has a unique pattern due to two peaks. Its emissions per capita rose initially before sharply declining after 2007. Also, it seems like Australia and United States have relative higher emission per capita overall and the rest of the countries are concentrated below them. 
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+change_table <- data %>%
+  filter(Year > 1990) %>%
+  group_by(Country) %>%
+  summarize(Change = last(Total.emissions.including.LULUCF.per.capita..kg.per.capita.) - first(Total.emissions.including.LULUCF.per.capita..kg.per.capita.)) %>%
+  arrange(desc(Change))
+
+# Create a formatted table
+kt <- kable(change_table, format = "markdown", col.names = c("Country", "Change in Emissions (kg per capita)")) %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE) %>%
+  add_header_above(c(" " = 1, "Emissions Change Table" = 2))
+kt
+```
+
+Looking at the table, we can see greenhouse emission changes over about 30 years. Japan is the only country which showed a positive increase. It indicates an increase in emissions, but the increase is just 0.067 kg per capita. Australia and Russia have relative huge declines in greenhouse emissions per capita. France, Spain, South Africa, Brazil and United States all have negative change which means that they decrease the greenhouse emissions per capita over years, but the declines are very small.
+
+
+### Interpretation of Results
+
+The graph depicting annual per capita greenhouse gas emissions offers a compelling narrative of environmental changes across nations. Spain's unique pattern, with an initial rise followed by a sharp decline after 2007, suggests a noteworthy shift in environmental policies or economic activities. Similarly, Australia shows a distinct tremd, initially experiencing a steady rise in emissions before a sharp decline after 2005. Notably, Australia and the United States emerge as the leading contributors to per capita emissions, with other countries concentrated below them. 
+
+The table shows the changes in emissions per capita. Japan's positive change indicates an increase in emissions, reflecting potential challenges in implementing effective emission reduction strategies. In contrast, Spain and South Africa's notable reductions signify successful efforts in curbing emissions. Brazil's substantial decrease aligns with global goals for emission reduction, showcasing a positive environmental trajectory. On the other hand, large negative changes in France, the United States, and Russia underscore significant reductions in emissions per capita, with Australia standing out for an exceptionally substantial decrease. Together, these findings highlight the complex and varied landscape of global efforts to mitigate greenhouse gas emissions.
+
+In the research question, we wanted to understand how greenhouse gas emissions have changed over time on a per capita basis for each country. The graph and table together depict a story of environmental dynamics, showcasing both positive and negative trends in emissions across nations. The concentration of high per capita emitters, particularly Australia and the United States, shows the need for policies to address emissions from these countries.
+
+
+### Limitations of Findings
+
+While the analysis provides valuable insights, there are limitations to consider. The data captures changes over a specific time frame, and the reasons behind these changes may vary among countries. The graph and table offer a snapshot, and a more comprehensive understanding would require additional contextual information, such as policy changes, economic shifts, and technology advancements. Additionally, the data might not capture recent developments or emerging trends, necessitating periodic updates for a more accurate reflection of current environment. 
+
+
+### Directions for Future Work
+
+
+To extend this story further, future work could involve a more detailed analysis of the factors influencing the trends. This may include examining specific policies, economic events, and technological innovations that correlate with changes in emissions. Integrating additional socio-economic and policy-related variables could provide a more comprehensive understanding of the forces behind emission trend. Exploring regional variations within countries and considering the impact of global events, such as economic recessions or international agreements, could enhance the depth of the analysis. Periodic updates to the dataset would ensure that the findings remain relevant and reflective of current environment. 
+
+\
+\
+
+#### What is the relationship between greenhouse gas emissions (index) and time in the USA, and can a linear regression model be applied to predict emissions for the next 20 years?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+france_data <- subset(data, Country == 'France')
+
+france_data$Year_centered <- france_data$Year - 1990
+model <- lm(Total.emissions.including.LULUCF..Index.1990.100. ~ Year_centered, data = france_data)
+all_years <- 1990:2040
+all_years_centered <- all_years - 1990
+extended_data <- data.frame(Year_centered = all_years_centered)
+extended_predictions <- predict(model, newdata = extended_data)
+prediction_data <- data.frame(Year = all_years, Predicted_Emissions = extended_predictions)
+
+```
+
+### Insights from the Data
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+linear <- ggplot( ) +
+  geom_point(data = france_data, aes(x = Year, y = Total.emissions.including.LULUCF..Index.1990.100.), color = "blue", shape = 4, size = 2) +
+  geom_line(data = prediction_data, aes(x = Year, y = Predicted_Emissions), color = "green", linetype = "dashed") +
+  labs(title = "Greenhouse Gas Emissions Index in France - Linear Regression",
+       x = "Year", y = "Emissions Index (1990 = 100)")  + 
+  theme_minimal() +
+  scale_color_manual(name = "Data Type", 
+                     values = c("blue", "green"), labels = c("Original Data", "Predicted Data")) +
+  theme(legend.position = "right")
+
+linear
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+poly_model <- lm(Total.emissions.including.LULUCF..Index.1990.100. ~ poly(Year, degree = 2), data = france_data)
+extended_data_poly <- data.frame(Year = all_years)
+extended_predictions_poly <- predict(poly_model, newdata = extended_data_poly)
+
+poly <- ggplot() +
+  geom_point(data = france_data, aes(x = Year, y = Total.emissions.including.LULUCF..Index.1990.100.), color = "blue", shape = 4, size = 2) +
+  geom_line(data = data.frame(Year = all_years, Predicted_Emissions = extended_predictions_poly), aes(x = Year, y = Predicted_Emissions), color = "green") +
+  labs(title = "Greenhouse Gas Emissions Index in France",
+       x = "Year", y = "Emissions Index (1990 = 100)")  + 
+  theme_minimal() +
+  scale_color_manual(name = "Data Type", 
+                     values = c("Original Data" = "blue", "Polynomial Regression" = "green")) +
+  theme(legend.position = "right")
+
+poly
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+r2m <- summary(model)$r.squared
+r2p <- summary(poly_model)$r.squared
+
+
+r2_table <- data.frame(Model = c("Linear Regression", "Polynomial Regression"), R2_Value = c(r2m, r2p))
+
+r2_table_formatted <- kable(r2_table, format = "markdown", col.names = c("Model", "R^2 Value")) %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE)
+
+r2_table_formatted
+```
+
+To analyze the trend of greenhouse gas emissions index over time in France, we first created a new variable, 'Year_centered', by centering the year around 1990, the base year. We then created a scatter plot to visualize any potential trends in the emissions index over time. Subsequently, we fitted the data into two models: a linear regression model and a second-degree polynomial model. 
+
+To address the question of which regression model would best predict future data over the next 20 years, we utilized both models to forecast the trend of the greenhouse gas emissions index. To ensure the accuracy and practicality of our models, we calculated the R-squared value for both, as it provides a measure of the goodness of fit of a model.
+
+Upon examining the results, we observed a clear contrast between the two regression plots. Both graphs depict an overall decreasing trend of the greenhouse gas emissions index with the progression of years. However, the linear regression model fails to capture all fluctuations in the emissions index. As the line of best fit in the linear regression model is straight, it can only represent a single relationship - an upward trend, a downward trend, or no trend. In contrast, the second-degree polynomial regression model can fit a curve that shows a slight increasing trend from 1990 to 2000, followed by a gradual decrease.
+
+In terms of predicting future data over the next 20 years, the polynomial regression model appears to be more effective due to several factors. Firstly, the distances between the line of best fit and each individual data point in the linear regression model are greater than those in the polynomial model, indicating larger errors in the linear model for the original data from 1990 to 2020. Secondly, the R-squared value for the polynomial regression model is 0.915, suggesting a strong trend of the greenhouse gas emissions index over the years. In comparison, the R-squared value for the linear model is 0.724. Given the relatively smaller value of 0.724, the polynomial regression model seems to provide a better fit for the original data from 1990 to 2019 than the linear regression model. Consequently, the curve in the polynomial regression model offers a more accurate data trajectory than the line in the linear regression model. Finally, based on the more accurate and reliable fitting data currently available, the polynomial regression model may be better suited to predict data over the next 20 years.
+
+
+### Interpretation of Results
+
+In the introduction, we discussed the problem of greenhouse gas emissions and their impact on climate change and other environmental issues. We also examined how different countries have contributed to or reduced their emissions over time. We focused on France as a case study, using the greenhouse gas index from 1990 to 2019 (with 1990 as the base year) to analyze its emission trends. We found that France has been decreasing its emissions, which we attributed to its current policies and actions. According to France 24, the international news channel, the French government recently unveiled a plan to accelerate the reduction of greenhouse gas emissions by 50% by 2030 compared to 1990 levels. The country also plans to invest 7 billion euros in the energy and climate transition, including significant reductions in greenhouse gas emissions from the 50 most climate-damaging industrial sites, which account for about 10% of France’s total emissions. These facts are consistent with our predicted downward trend in emissions.
+
+
+### Limitations of Findings
+
+For the prediction part, our models do not account for external factors such as economic growth, technological advancements, policy changes, and international agreements that can significantly influence emission trends. Therefore, our predictions might not reflect the actual future scenarios. Moreover, while the polynomial regression model might seem to fit the historical data better than the linear regression model, it also has a higher risk of overfitting, meaning that it might not generalize well to new data. This is why we only predicted the next 20 years, to minimize this uncertainty. For the trend analysis part, a more suitable model might be a linear mixed model, which can account for the longitudinal nature of the data, where the emissions in one year might depend on the emissions in previous years. However, to fit a linear mixed model, we would need to specify random variables for the intercept and slope, which we could not do with our dataset and limited knowledge. Therefore, we used a simpler linear model, which still showed a clear declining trend in emissions from 1990 to 2019.
+
+
+### Directions for Future Work
+
+To improve our analysis and make more better predictions, future work could include the more steps. One, we could incorporate more variables that affect greenhouse gas emissions, such as economic growth rates, advancements in green technology, and changes in regulations and policies. Gather more granular data, such as emissions that are specifc to a sector, to identify key areas for making targeted polices / regulations. Use cross-validation to assess the potential for overfitting in the polynomial regression model. This technique involves dividing the dataset into training and validation sets, where the model is fitted on the training set and tested on the validation set. Repeating this process several times can give a better indication of how the model might perform on new data.
+Explore the possibility of fitting a linear mixed model, which can account for the longitudinal nature of the data and capture more complex trends.
+
+\
+\
+
+#### How does the relationship between phosphorus and nitrogen levels compare to agricultural emissions in the USA and France?
+
+### Insights from the Data
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Filter data for USA and China
+data_filtered <- data[data$Country %in% c("United States", "France"),]
+
+# Plot Phosphorus vs Nitrogen over Year for USA and Brazil
+p_vs_n <- ggplot(data_filtered, aes(x=Year)) +
+  geom_line(aes(y=`Phosphorus..kg.`, color="Phosphorus"), na.rm=TRUE) +
+  geom_line(aes(y=`Nitrogen..kg.`, color="Nitrogen"), na.rm=TRUE) +
+  facet_wrap(~Country) +
+  labs(color="Element", y="Quantity (kg)", title="Phosphorus vs Nitrogen over Year for USA and Brazil") +
+  theme_minimal()
+
+p_vs_n
+```
+
+In the USA, the quantity of Phosphorus has remained relatively stable, while Nitrogen levels have been on a downward trend. This might suggest a change in the nutrient composition of USA agricultural systems.
+
+Similarly, France has seen an steady trend in Phosphorus levels, and a downward trend Nitrogen quantities, indicating a potential decreased in the use of these nutrients in its agricultural practices. 
+
+Both the USA and France seem to have similar levels of nutrients. Furthermore, the both of them show a higher quantity of Nitrogen compared to Phosphorus, which could be due to the country’s specific agricultural needs/practices.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+data_filtered <- data[data$Country %in% c("United States", "France"),]
+
+co2_year <- ggplot(data_filtered, aes(x=Year, y=`Agriculture..Tonnes.of.CO2.equivalent.`, color=Country)) +
+  geom_line(na.rm=TRUE) +
+  labs(y="Agriculture CO2 equivalent (Tonnes)", title="Agriculture CO2 equivalent over Year for USA and Brazil") +
+  theme_minimal()
+
+
+co2_year
+```
+
+In terms of agricultural CO2 emissions, USA exhibits an increasing trend. While the USA currently leads in overall emissions, France’s emissions are low compared to the USA. 
+
+### Interpretation of Results
+
+The analysis provide valuable insights into the relationship between nutrient use and agricultural emissions, as well as the environmental impact of agricultural activities.
+The stable levels of phosphorus and decreasing levels of nitrogen in the USA suggest a shift in the nutrient composition of its agricultural systems. This could be due to changes in farming practices, crop types, or regulatory measures aimed at reducing nitrogen use. Nitrogen is a key nutrient for plant growth, but excess nitrogen can cause environmental problems such as water pollution, soil acidification, and greenhouse gas emissions. Therefore, reducing nitrogen use could have positive effects on the environment and the economy.
+
+On the other hand, France’s steady levels of phosphorus and nitrogen indicate a potential stability or efficiency in its nutrient use. This could be driven by factors such as crop rotation, organic farming, or nutrient recycling. Phosphorus is also an essential nutrient for plant growth, but it is a non renewabl resource that is quite expensive. Therefore, maintaining or improving phosphorus use efficiency could have benefits for food security and sustainability.
+
+In terms of CO2 emissions, both countries are on an upward trend, with the USA leading in overall emissions. This shows the environmental impact of agricultural activities, which contribute to climate change and affect natural resources. The USA’s high emissions could be related to its large agricultural sector.
+
+France’s low emissions compared to the USA could be because of its smaller agricultural sector. France’s agricultural systems are also more diversified and less dependent on fossil fuels, as it has a higher share of renewable energy sources in its energy. France also has a strong tradition of environmental protection and regulation, which could influence its emission reduction methods. 
+
+To answer our research question, the results show that the two countries have different trends and levels of nutrient use and emissions, which could reflect their different agricultural practices, policies, and challenges. The results also highlight the importance of understanding the environmental implications of agricultural activities, as they affect the climate, the soil, and the water.
+
+
+### Limitations of Findings
+
+The data covers a specific time period, and the trends and levels might change over time due to various factors. The data also does not capture the diversity and complexity of agricultural systems within each country, as it aggregates the data at the national level. The data also does not account for other variables that might influence nutrient use and emissions, such as crop types, farming methods, soil quality, weather conditions, and economy The results should be seen as indicative rather than conclusive, and more detailed and contextualized data would be needed for a more better understanding.
+
+### Directions for Future Work
+
+To extend this analysis, future work could include a more detailed examination of the factors driving the trends. This could involve analyzing data on crop typos, farming practices, and regulations in each country. Additionally, incorporating data from other countries could provide a more comprehensive picture of global trends in nutrient use and agricultural emissions. Lastly, exploring the potential impacts of these trends on food security and environmental sustainability could provide valuable insights for making polcies and laws. 
+
+# Summary
+
+### Summary and Takeaway Message
+
+We conducted a research project on greenhouse gas emissions and nutrient dynamics in agriculture, with a focus on France, a country that has effectively reduced its emissions despite the global increase. We used two datasets from the Organization for Economic Co-operation and Development (OECD) to analyze the trends and relationships of various environmental indicators, such as emissions index, emissions per capita, phosphorus and nitrogen levels, and agricultural emissions. We applied descriptive and inferential statistics, as well as data visualization techniques, to answer our research questions. We found that France has been decreasing its emissions index and emissions per capita over time, which we attributed to its strong commitment to climate action and sustainable energy solutions. We also found that France has maintained stable levels of phosphorus and nitrogen in its agricultural systems, which could indicate a balance or efficiency in its nutrient use. We compared France’s results with those of other countries, such as the United States, Japan, and Brazil, and observed significant variations in their emission and nutrient trends. We discussed the implications of our findings for policymaking, environmental sustainability, and food security. We also acknowledged the limitations of our analysis, such as the lack of external factors, the risk of overfitting, and the longitudinal nature of the data. We suggested directions for future work, such as incorporating more variables, using cross-validation, and exploring linear mixed models. Our research project contributes to the understanding of greenhouse gas emissions and their impact on agriculture, as well as the potential solutions and strategies to mitigate them.
+
