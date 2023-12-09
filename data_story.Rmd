@@ -137,9 +137,6 @@ simplify the datasets, we removed one of the redundant columns while keeping the
 
 **Data Merging:** We find the latest start year between the two datasets becuase the two datasets started at different years, then filter both datasets to include only years from this start year onwards. This ensures that the datasets cover the same time period when they are merged. Then we merge the datasets based on the “Country” and “Year” columns. Then, we add a “Region” column to the merged data, which could be useful for grouping countries by region in subsequent analyses, this is our added categorical variable. 
 
-(5 points) any technical decisions you did, such as either to remove missings, or replace missing values with another one?
-(5 points) if you use more complex statistical methods, such as regression, these should also discussed here.
-
 ### Sample Selection Process
 
 The sample selection is based on the specific countries and variables we were interested in for our research questions. We filter the data to include only these countries and variables.
@@ -185,7 +182,6 @@ change_table <- data %>%
   summarize(Change = last(Total.emissions.including.LULUCF.per.capita..kg.per.capita.) - first(Total.emissions.including.LULUCF.per.capita..kg.per.capita.)) %>%
   arrange(desc(Change))
 
-# Create a formatted table
 kt <- kable(change_table, format = "markdown", col.names = c("Country", "Change in Emissions (kg per capita)")) %>%
   kable_styling(bootstrap_options = "striped", full_width = FALSE) %>%
   add_header_above(c(" " = 1, "Emissions Change Table" = 2))
@@ -314,10 +310,9 @@ Explore the possibility of fitting a linear mixed model, which can account for t
 ### Insights from the Data
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-# Filter data for USA and China
+
 data_filtered <- data[data$Country %in% c("United States", "France"),]
 
-# Plot Phosphorus vs Nitrogen over Year for USA and Brazil
 p_vs_n <- ggplot(data_filtered, aes(x=Year)) +
   geom_line(aes(y=`Phosphorus..kg.`, color="Phosphorus"), na.rm=TRUE) +
   geom_line(aes(y=`Nitrogen..kg.`, color="Nitrogen"), na.rm=TRUE) +
@@ -376,4 +371,3 @@ To extend this analysis, future work could include a more detailed examination o
 ### Summary and Takeaway Message
 
 We conducted a research project on greenhouse gas emissions and nutrient dynamics in agriculture, with a focus on France, a country that has effectively reduced its emissions despite the global increase. We used two datasets from the Organization for Economic Co-operation and Development (OECD) to analyze the trends and relationships of various environmental indicators, such as emissions index, emissions per capita, phosphorus and nitrogen levels, and agricultural emissions. We applied descriptive and inferential statistics, as well as data visualization techniques, to answer our research questions. We found that France has been decreasing its emissions index and emissions per capita over time, which we attributed to its strong commitment to climate action and sustainable energy solutions. We also found that France has maintained stable levels of phosphorus and nitrogen in its agricultural systems, which could indicate a balance or efficiency in its nutrient use. We compared France’s results with those of other countries, such as the United States, Japan, and Brazil, and observed significant variations in their emission and nutrient trends. We discussed the implications of our findings for policymaking, environmental sustainability, and food security. We also acknowledged the limitations of our analysis, such as the lack of external factors, the risk of overfitting, and the longitudinal nature of the data. We suggested directions for future work, such as incorporating more variables, using cross-validation, and exploring linear mixed models. Our research project contributes to the understanding of greenhouse gas emissions and their impact on agriculture, as well as the potential solutions and strategies to mitigate them.
-

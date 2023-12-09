@@ -137,9 +137,6 @@ simplify the datasets, we removed one of the redundant columns while keeping the
 
 **Data Merging:** We find the latest start year between the two datasets becuase the two datasets started at different years, then filter both datasets to include only years from this start year onwards. This ensures that the datasets cover the same time period when they are merged. Then we merge the datasets based on the “Country” and “Year” columns. Then, we add a “Region” column to the merged data, which could be useful for grouping countries by region in subsequent analyses, this is our added categorical variable. 
 
-(5 points) any technical decisions you did, such as either to remove missings, or replace missing values with another one?
-(5 points) if you use more complex statistical methods, such as regression, these should also discussed here.
-
 ### Sample Selection Process
 
 The sample selection is based on the specific countries and variables we were interested in for our research questions. We filter the data to include only these countries and variables.
@@ -314,10 +311,9 @@ Explore the possibility of fitting a linear mixed model, which can account for t
 ### Insights from the Data
 
 ```{r}
-# Filter data for USA and China
+
 data_filtered <- data[data$Country %in% c("United States", "France"),]
 
-# Plot Phosphorus vs Nitrogen over Year for USA and Brazil
 p_vs_n <- ggplot(data_filtered, aes(x=Year)) +
   geom_line(aes(y=`Phosphorus..kg.`, color="Phosphorus"), na.rm=TRUE) +
   geom_line(aes(y=`Nitrogen..kg.`, color="Nitrogen"), na.rm=TRUE) +

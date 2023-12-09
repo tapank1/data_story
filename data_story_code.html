@@ -664,10 +664,6 @@ they are merged. Then we merge the datasets based on the “Country” and
 “Year” columns. Then, we add a “Region” column to the merged data, which
 could be useful for grouping countries by region in subsequent analyses,
 this is our added categorical variable.</p>
-<p>(5 points) any technical decisions you did, such as either to remove
-missings, or replace missing values with another one? (5 points) if you
-use more complex statistical methods, such as regression, these should
-also discussed here.</p>
 </div>
 <div id="sample-selection-process" class="section level3">
 <h3>Sample Selection Process</h3>
@@ -1039,10 +1035,8 @@ compare to agricultural emissions in the USA and France?</h4>
 </div>
 <div id="insights-from-the-data-2" class="section level3">
 <h3>Insights from the Data</h3>
-<pre class="r"><code># Filter data for USA and China
-data_filtered &lt;- data[data$Country %in% c(&quot;United States&quot;, &quot;France&quot;),]
+<pre class="r"><code>data_filtered &lt;- data[data$Country %in% c(&quot;United States&quot;, &quot;France&quot;),]
 
-# Plot Phosphorus vs Nitrogen over Year for USA and Brazil
 p_vs_n &lt;- ggplot(data_filtered, aes(x=Year)) +
   geom_line(aes(y=`Phosphorus..kg.`, color=&quot;Phosphorus&quot;), na.rm=TRUE) +
   geom_line(aes(y=`Nitrogen..kg.`, color=&quot;Nitrogen&quot;), na.rm=TRUE) +
