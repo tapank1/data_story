@@ -1,4 +1,4 @@
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r }
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -41,7 +41,7 @@ In essence, a comprehensive understanding of greenhouse gas emissions is not jus
 
 # Data
 
-```{r}
+```{r }
 data <- read.csv("data/ghg_and_nutrients_data.csv")
 ```
 
@@ -162,7 +162,7 @@ We do not use any complex statistical methods to clean or process our data. Howe
 
 ### Insights from the Data
 
-```{r}
+```{r }
 filtered_data <- subset(data, select = c("Country","Year","Total.emissions.including.LULUCF.per.capita..kg.per.capita."))
 
 GHG_overtime_capita <- ggplot(filtered_data, aes(x = Year, y = Total.emissions.including.LULUCF.per.capita..kg.per.capita., color = Country)) +
@@ -174,10 +174,10 @@ GHG_overtime_capita
 ```
 
 
-The graph shows annual emissions of greenhouse gases (GHGs) per capita for some nation in different continents. Overall, the trends of greenhouse emissions in these countries are decline or stay constant. For France, the graph shows a steady reduction of greenhouse emissions per capita over time, but the decline is not much. For, Spain has a unique pattern due to two peaks. Its emissions per capita rose initially before sharply declining after 2007. Also, it seems like Australia and United States have relative higher emission per capita overall and the rest of the countries are concentrated below them. 
+The graph shows annual emissions of greenhouse gases (GHGs) per capita for some nation in different continents. Overall, the trends of greenhouse emissions in these countries are decline or stay constant. For France, the graph shows a steady reduction of greenhouse emissions per capita over time, but the decline is not much. For Brazil, it has a unique pattern due to two peaks. For Spain, its emissions per capita rose initially before declining after 2007. Also, it seems like Australia and United States have relative higher emission per capita overall and the rest of the countries are concentrated below them. 
 
 
-```{r}
+```{r }
 
 change_table <- data %>%
   filter(Year > 1990) %>%
@@ -185,6 +185,7 @@ change_table <- data %>%
   summarize(Change = last(Total.emissions.including.LULUCF.per.capita..kg.per.capita.) - first(Total.emissions.including.LULUCF.per.capita..kg.per.capita.)) %>%
   arrange(desc(Change))
 
+# Create a formatted table
 kt <- kable(change_table, format = "markdown", col.names = c("Country", "Change in Emissions (kg per capita)")) %>%
   kable_styling(bootstrap_options = "striped", full_width = FALSE) %>%
   add_header_above(c(" " = 1, "Emissions Change Table" = 2))
@@ -196,29 +197,30 @@ Looking at the table, we can see greenhouse emission changes over about 30 years
 
 ### Interpretation of Results
 
-The graph depicting annual per capita greenhouse gas emissions offers a compelling narrative of environmental changes across nations. Spain's unique pattern, with an initial rise followed by a sharp decline after 2007, suggests a noteworthy shift in environmental policies or economic activities. Similarly, Australia shows a distinct tremd, initially experiencing a steady rise in emissions before a sharp decline after 2005. Notably, Australia and the United States emerge as the leading contributors to per capita emissions, with other countries concentrated below them. 
+The graph depicting annual greenhouse gas emissions per capita offers a compelling narrative of environmental changes across nations. Brazil's unique pattern with 2 peaks suggests that it must be influenced by some external factors, like policies or economic activities. At the same time, France has a decreasing trend, which means that France is indeed working hard to reduce greenhouse gases and has get some relative optimistic results. .
 
-The table shows the changes in emissions per capita. Japan's positive change indicates an increase in emissions, reflecting potential challenges in implementing effective emission reduction strategies. In contrast, Spain and South Africa's notable reductions signify successful efforts in curbing emissions. Brazil's substantial decrease aligns with global goals for emission reduction, showcasing a positive environmental trajectory. On the other hand, large negative changes in France, the United States, and Russia underscore significant reductions in emissions per capita, with Australia standing out for an exceptionally substantial decrease. Together, these findings highlight the complex and varied landscape of global efforts to mitigate greenhouse gas emissions.
+The table shows the changes in emissions per capita. Japan’s positive change indicates an increase in emissions, reflecting potential challenges in implementing effective emission reduction strategies. Australia's significant decrease in greenhouse gas emissions per capita from 1990 to 2020 is attributed to a combination of policies and initiatives. The Emissions Reduction Fund (ERF) serves as a key mechanism, offering financial incentives for emission reduction projects, such as energy-efficient street lighting and waste gas energy conversion. For France, it reduces  3.151 kg per capita which is a very small reduction of greenhouse emissioins, even if it did a good job on the total greehouse emissions. Moreover, even if France issue lots of policies to make the total greenhouse emissions down, but it did not affect on common people's life much. That's why we talked about total greenhouse gas emissions doesn’t always provide a complete picture.
 
 In the research question, we wanted to understand how greenhouse gas emissions have changed over time on a per capita basis for each country. The graph and table together depict a story of environmental dynamics, showcasing both positive and negative trends in emissions across nations. The concentration of high per capita emitters, particularly Australia and the United States, shows the need for policies to address emissions from these countries.
 
 
 ### Limitations of Findings
 
-While the analysis provides valuable insights, there are limitations to consider. The data captures changes over a specific time frame, and the reasons behind these changes may vary among countries. The graph and table offer a snapshot, and a more comprehensive understanding would require additional contextual information, such as policy changes, economic shifts, and technology advancements. Additionally, the data might not capture recent developments or emerging trends, necessitating periodic updates for a more accurate reflection of current environment. 
+In the introduction, even if we mention that total emissions per capita offer a more nuanced view, it also has some drawbacks. Analyzing greenhouse gas emissions per capita basis can hide the total emissions of a country, especially in larger nations with lower per capita emissions but high overall contribution. This method also ignore some internal and external facctors including economic disparities within countries, as wealthier individuals typically have higher carbon footprints, thus skewing the average. The higher carbon footprints of wealthier individuals present a limitation in analyzing greenhouse gas emissions on a per capita basis. This is because wealth enables greater consumption of goods and services, leading to higher emissions. Wealthier individuals often lead more energy-intensive lifestyles, with frequent travel, especially by air, larger homes requiring more energy, and ownership of multiple vehicles and electronic devices. Such factors increase their carbon footprint substantially. When these higher emissions are averaged with the lower emissions of less affluent individuals, it can skew the per capita emissions data. This averaging masks the disproportionate impact of wealthier individuals on overall emissions, limiting the effectiveness of per capita analysis in accurately representing a country's environmental impact.
 
 
 ### Directions for Future Work
 
 
-To extend this story further, future work could involve a more detailed analysis of the factors influencing the trends. This may include examining specific policies, economic events, and technological innovations that correlate with changes in emissions. Integrating additional socio-economic and policy-related variables could provide a more comprehensive understanding of the forces behind emission trend. Exploring regional variations within countries and considering the impact of global events, such as economic recessions or international agreements, could enhance the depth of the analysis. Periodic updates to the dataset would ensure that the findings remain relevant and reflective of current environment. 
+To extend this analysis further, future work could involve a more detailed analysis of the factors influencing the trends. This may include examining specific policies, economic events, and technological innovations that correlate with changes in emissions. Moreover, we need to analyze both total greenhouse emissions and total greenhouse emissions per capita in different countries to minimize some bias. In this way, we can analyze the greenhouse emissions from both way, which make us have a more accurate understanding of changes over years. Moreover, we need more some representative countries, like China. Because it a country that have relative huge amount of total greenhouse emissions due to such a big territory and citizen. However, its greenhouse emissions per capita may be very low because of more than 1.4 billion people. In this way, it is a typical country as a case to be analyzed.
+
 
 \
 \
 
 #### What is the relationship between greenhouse gas emissions (index) and time in the USA, and can a linear regression model be applied to predict emissions for the next 20 years?
 
-```{r}
+```{r }
 
 france_data <- subset(data, Country == 'France')
 
@@ -233,7 +235,7 @@ prediction_data <- data.frame(Year = all_years, Predicted_Emissions = extended_p
 ```
 
 ### Insights from the Data
-```{r}
+```{r }
 linear <- ggplot( ) +
   geom_point(data = france_data, aes(x = Year, y = Total.emissions.including.LULUCF..Index.1990.100.), color = "blue", shape = 4, size = 2) +
   geom_line(data = prediction_data, aes(x = Year, y = Predicted_Emissions), color = "green", linetype = "dashed") +
@@ -248,7 +250,7 @@ linear
 ```
 
 
-```{r}
+```{r }
 poly_model <- lm(Total.emissions.including.LULUCF..Index.1990.100. ~ poly(Year, degree = 2), data = france_data)
 extended_data_poly <- data.frame(Year = all_years)
 extended_predictions_poly <- predict(poly_model, newdata = extended_data_poly)
@@ -266,7 +268,8 @@ poly <- ggplot() +
 poly
 ```
 
-```{r}
+```{r }
+
 r2m <- summary(model)$r.squared
 r2p <- summary(poly_model)$r.squared
 
@@ -311,9 +314,10 @@ Explore the possibility of fitting a linear mixed model, which can account for t
 ### Insights from the Data
 
 ```{r}
-
+# Filter data for USA and China
 data_filtered <- data[data$Country %in% c("United States", "France"),]
 
+# Plot Phosphorus vs Nitrogen over Year for USA and Brazil
 p_vs_n <- ggplot(data_filtered, aes(x=Year)) +
   geom_line(aes(y=`Phosphorus..kg.`, color="Phosphorus"), na.rm=TRUE) +
   geom_line(aes(y=`Nitrogen..kg.`, color="Nitrogen"), na.rm=TRUE) +
@@ -330,7 +334,7 @@ Similarly, France has seen an steady trend in Phosphorus levels, and a downward 
 
 Both the USA and France seem to have similar levels of nutrients. Furthermore, the both of them show a higher quantity of Nitrogen compared to Phosphorus, which could be due to the country’s specific agricultural needs/practices.
 
-```{r}
+```{r }
 
 data_filtered <- data[data$Country %in% c("United States", "France"),]
 
@@ -338,6 +342,7 @@ co2_year <- ggplot(data_filtered, aes(x=Year, y=`Agriculture..Tonnes.of.CO2.equi
   geom_line(na.rm=TRUE) +
   labs(y="Agriculture CO2 equivalent (Tonnes)", title="Agriculture CO2 equivalent over Year for USA and Brazil") +
   theme_minimal()
+
 
 co2_year
 ```
