@@ -214,7 +214,7 @@ To extend this analysis further, future work could involve a more detailed analy
 \
 \
 
-#### What is the relationship between greenhouse gas emissions (index) and time in the USA, and can a linear regression model be applied to predict emissions for the next 20 years?
+#### What is the relationship between greenhouse gas emissions (index) and time in the France, and can a linear regression model be applied to predict emissions for the next 20 years?
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
@@ -254,7 +254,7 @@ extended_predictions_poly <- predict(poly_model, newdata = extended_data_poly)
 poly <- ggplot() +
   geom_point(data = france_data, aes(x = Year, y = Total.emissions.including.LULUCF..Index.1990.100.), color = "blue", shape = 4, size = 2) +
   geom_line(data = data.frame(Year = all_years, Predicted_Emissions = extended_predictions_poly), aes(x = Year, y = Predicted_Emissions), color = "green") +
-  labs(title = "Greenhouse Gas Emissions Index in France",
+  labs(title = "Greenhouse Gas Emissions Index in France - Polynomial Regression",
        x = "Year", y = "Emissions Index (1990 = 100)")  + 
   theme_minimal() +
   scale_color_manual(name = "Data Type", 

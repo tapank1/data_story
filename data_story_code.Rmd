@@ -215,7 +215,7 @@ To extend this analysis further, future work could involve a more detailed analy
 \
 \
 
-#### What is the relationship between greenhouse gas emissions (index) and time in the USA, and can a linear regression model be applied to predict emissions for the next 20 years?
+#### What is the relationship between greenhouse gas emissions (index) and time in the France, and can a linear regression model be applied to predict emissions for the next 20 years?
 
 ```{r }
 
